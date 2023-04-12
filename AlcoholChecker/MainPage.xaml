@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlcoholChecker.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="When can I Legally Buy Alcohol?" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Please select your Date of Birth" FontSize="20" />
+        <DatePicker x:Name="Birthday" Date="04/11/2023" />
+        <Button Text="Check" Clicked="Handle_Clicked" />
+        <Label x:Name ="alabel" />
+    </StackLayout>
+
+</ContentPage>
